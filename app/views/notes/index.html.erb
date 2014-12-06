@@ -1,0 +1,10 @@
+<%= link_to "New note", new_note_path %>
+<ul>
+  <% @notes.each do |note| %>
+    <li>
+      <%= link_to note do %>
+        <%= note.id %>. <%= note.content %>
+      <% end %>
+    </li>
+  <% end %>
+</ul>

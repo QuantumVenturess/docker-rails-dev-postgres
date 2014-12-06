@@ -1,0 +1,27 @@
+/usr/local/bin/ruby extconf.rb 
+checking for mmap() in sys/mman.h... yes
+checking for munmap() in sys/mman.h... yes
+checking for mremap() in sys/mman.h... yes
+checking for getpagesize() in unistd.h... yes
+checking for rb_thread_blocking_region()... yes
+checking for rb_thread_io_blocking_region()... yes
+checking for GCC 4+ atomic builtins... yes
+creating Makefile
+
+make "DESTDIR=" clean
+make: Warning: File 'Makefile' has modification time 3099 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+
+make "DESTDIR="
+make: Warning: File 'Makefile' has modification time 3099 s in the future
+compiling linux_inet_diag.c
+compiling linux_tcp_info.c
+compiling raindrops.c
+linking shared-object raindrops_ext.so
+make: warning:  Clock skew detected.  Your build may be incomplete.
+
+make "DESTDIR=" install
+make: Warning: File 'Makefile' has modification time 3097 s in the future
+/usr/bin/install -c -m 0755 raindrops_ext.so ./.gem.20141206-1-mkmenr
+installing default raindrops_ext libraries
+make: warning:  Clock skew detected.  Your build may be incomplete.

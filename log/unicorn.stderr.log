@@ -1,0 +1,472 @@
+I, [2014-12-06T19:35:50.921437 #14]  INFO -- : Refreshing Gem list
+I, [2014-12-06T19:36:29.191248 #14]  INFO -- : listening on addr=/tmp/unicorn.sock fd=10
+I, [2014-12-06T19:36:29.192053 #14]  INFO -- : listening on addr=0.0.0.0:8080 fd=11
+I, [2014-12-06T19:36:32.479380 #14]  INFO -- : master process ready
+I, [2014-12-06T19:36:32.619213 #17]  INFO -- : worker=0 ready
+I, [2014-12-06T19:36:32.623689 #20]  INFO -- : worker=1 ready
+I, [2014-12-06T19:36:32.648984 #23]  INFO -- : worker=2 ready
+192.168.59.3 - - [06/Dec/2014 19:36:37] "GET / HTTP/1.1" 200 - 1.4449
+192.168.59.3 - - [06/Dec/2014 19:36:37] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0046
+192.168.59.3 - - [06/Dec/2014 19:36:40] "GET / HTTP/1.1" 304 - 1.4489
+192.168.59.3 - - [06/Dec/2014 19:36:42] "GET %2Ffavicon.ico HTTP/1.1" 304 - 1.3049
+192.168.59.3 - - [06/Dec/2014 19:36:45] "GET / HTTP/1.1" 304 - 0.0339
+192.168.59.3 - - [06/Dec/2014 19:36:45] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0040
+192.168.59.3 - - [06/Dec/2014 19:36:46] "GET / HTTP/1.1" 200 - 0.7147
+192.168.59.3 - - [06/Dec/2014 19:36:47] "GET /application.css?body=1 HTTP/1.1" 304 - 0.1331
+192.168.59.3 - - [06/Dec/2014 19:36:47] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.1467
+192.168.59.3 - - [06/Dec/2014 19:36:47] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.1568
+192.168.59.3 - - [06/Dec/2014 19:36:47] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.0940
+192.168.59.3 - - [06/Dec/2014 19:36:47] "GET /application.js?body=1 HTTP/1.1" 304 - 0.1068
+192.168.59.3 - - [06/Dec/2014 19:36:47] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0033
+192.168.59.3 - - [06/Dec/2014 19:36:50] "GET / HTTP/1.1" 304 - 0.2252
+192.168.59.3 - - [06/Dec/2014 19:36:50] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.1025
+192.168.59.3 - - [06/Dec/2014 19:36:51] "GET /application.css?body=1 HTTP/1.1" 304 - 0.1360
+192.168.59.3 - - [06/Dec/2014 19:36:51] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.1690
+192.168.59.3 - - [06/Dec/2014 19:36:51] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.1099
+192.168.59.3 - - [06/Dec/2014 19:36:51] "GET /application.js?body=1 HTTP/1.1" 304 - 0.0823
+192.168.59.3 - - [06/Dec/2014 19:36:51] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0057
+192.168.59.3 - - [06/Dec/2014 19:36:51] "GET / HTTP/1.1" 200 - 0.0323
+192.168.59.3 - - [06/Dec/2014 19:36:51] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0042
+192.168.59.3 - - [06/Dec/2014 19:36:52] "GET / HTTP/1.1" 304 - 0.0328
+192.168.59.3 - - [06/Dec/2014 19:36:52] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0042
+192.168.59.3 - - [06/Dec/2014 19:36:53] "GET / HTTP/1.1" 200 - 0.2541
+192.168.59.3 - - [06/Dec/2014 19:36:53] "GET /application.css?body=1 HTTP/1.1" 304 - 0.1321
+192.168.59.3 - - [06/Dec/2014 19:36:53] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.1508
+192.168.59.3 - - [06/Dec/2014 19:36:53] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.1948
+192.168.59.3 - - [06/Dec/2014 19:36:53] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.1628
+192.168.59.3 - - [06/Dec/2014 19:36:53] "GET / HTTP/1.1" 200 - 0.1172
+192.168.59.3 - - [06/Dec/2014 19:36:53] "GET /application.js?body=1 HTTP/1.1" 304 - 0.1773
+192.168.59.3 - - [06/Dec/2014 19:36:53] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0052
+/opt/app/vendor/bundle/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:206:in `pid=': Already running on PID:14 (or pid=/opt/app/tmp/pids/unicorn.pid is stale) (ArgumentError)
+	from /opt/app/vendor/bundle/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:135:in `start'
+	from /opt/app/vendor/bundle/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	from /opt/app/vendor/bundle/bin/unicorn:23:in `load'
+	from /opt/app/vendor/bundle/bin/unicorn:23:in `<main>'
+I, [2014-12-06T19:50:28.064712 #13]  INFO -- : Refreshing Gem list
+I, [2014-12-06T19:51:06.196978 #13]  INFO -- : listening on addr=/tmp/unicorn.sock fd=10
+I, [2014-12-06T19:51:06.197606 #13]  INFO -- : listening on addr=0.0.0.0:8080 fd=11
+I, [2014-12-06T19:51:09.181923 #13]  INFO -- : master process ready
+I, [2014-12-06T19:51:09.299150 #19]  INFO -- : worker=1 ready
+I, [2014-12-06T19:51:09.348467 #22]  INFO -- : worker=2 ready
+I, [2014-12-06T19:51:09.349457 #16]  INFO -- : worker=0 ready
+192.168.59.3 - - [06/Dec/2014 19:51:11] "GET / HTTP/1.1" 200 - 1.8416
+192.168.59.3 - - [06/Dec/2014 19:51:12] "GET %2Ffavicon.ico HTTP/1.1" 200 - 1.3701
+I, [2014-12-06T19:51:55.902756 #14]  INFO -- : Refreshing Gem list
+I, [2014-12-06T19:52:33.121879 #14]  INFO -- : listening on addr=/tmp/unicorn.sock fd=10
+I, [2014-12-06T19:52:33.122431 #14]  INFO -- : listening on addr=0.0.0.0:8080 fd=11
+I, [2014-12-06T19:52:36.009224 #14]  INFO -- : master process ready
+I, [2014-12-06T19:52:36.146699 #17]  INFO -- : worker=0 ready
+I, [2014-12-06T19:52:36.146699 #23]  INFO -- : worker=2 ready
+I, [2014-12-06T19:52:36.184529 #20]  INFO -- : worker=1 ready
+192.168.59.3 - - [06/Dec/2014 19:52:37] "GET / HTTP/1.1" 304 - 1.4532
+192.168.59.3 - - [06/Dec/2014 19:52:39] "GET %2Ffavicon.ico HTTP/1.1" 304 - 1.3244
+I, [2014-12-06T20:13:39.261556 #14]  INFO -- : Refreshing Gem list
+I, [2014-12-06T20:14:17.597308 #14]  INFO -- : listening on addr=/tmp/unicorn.sock fd=10
+I, [2014-12-06T20:14:17.597815 #14]  INFO -- : listening on addr=0.0.0.0:8080 fd=11
+I, [2014-12-06T20:14:20.826229 #17]  INFO -- : worker=0 ready
+I, [2014-12-06T20:14:20.917122 #20]  INFO -- : worker=1 ready
+I, [2014-12-06T20:14:20.929234 #14]  INFO -- : master process ready
+I, [2014-12-06T20:14:20.975308 #23]  INFO -- : worker=2 ready
+192.168.59.3 - - [06/Dec/2014 20:14:23] "GET / HTTP/1.1" 304 - 1.3344
+192.168.59.3 - - [06/Dec/2014 20:14:25] "GET %2Ffavicon.ico HTTP/1.1" 304 - 1.1714
+192.168.59.3 - - [06/Dec/2014 20:14:44] "GET / HTTP/1.1" 304 - 0.0329
+192.168.59.3 - - [06/Dec/2014 20:14:46] "GET %2Ffavicon.ico HTTP/1.1" 304 - 1.3767
+I, [2014-12-06T20:36:03.159959 #13]  INFO -- : Refreshing Gem list
+I, [2014-12-06T20:36:22.884548 #13]  INFO -- : Refreshing Gem list
+I, [2014-12-06T20:36:57.930367 #13]  INFO -- : listening on addr=/tmp/unicorn.sock fd=10
+I, [2014-12-06T20:36:57.930930 #13]  INFO -- : listening on addr=0.0.0.0:8080 fd=11
+I, [2014-12-06T20:37:00.868387 #13]  INFO -- : master process ready
+I, [2014-12-06T20:37:00.957142 #19]  INFO -- : worker=1 ready
+I, [2014-12-06T20:37:00.968726 #16]  INFO -- : worker=0 ready
+I, [2014-12-06T20:37:01.047761 #22]  INFO -- : worker=2 ready
+192.168.59.3 - - [06/Dec/2014 20:37:04] "GET / HTTP/1.0" 200 - 1.3590
+192.168.59.3 - - [06/Dec/2014 20:37:04] "GET %2Ffavicon.ico HTTP/1.0" 200 - 0.0128
+192.168.59.3 - - [06/Dec/2014 20:37:05] "GET / HTTP/1.0" 304 - 0.0322
+192.168.59.3 - - [06/Dec/2014 20:37:05] "GET %2Ffavicon.ico HTTP/1.0" 304 - 0.0040
+192.168.59.3 - - [06/Dec/2014 20:37:08] "GET / HTTP/1.0" 304 - 2.0398
+192.168.59.3 - - [06/Dec/2014 20:37:08] "GET / HTTP/1.0" 200 - 2.3215
+192.168.59.3 - - [06/Dec/2014 20:37:09] "GET %2Ffavicon.ico HTTP/1.0" 304 - 0.0041
+192.168.59.3 - - [06/Dec/2014 20:37:14] "GET / HTTP/1.0" 304 - 0.0321
+192.168.59.3 - - [06/Dec/2014 20:37:14] "GET %2Ffavicon.ico HTTP/1.0" 304 - 0.0033
+192.168.59.3 - - [06/Dec/2014 20:37:15] "GET / HTTP/1.0" 304 - 0.0331
+192.168.59.3 - - [06/Dec/2014 20:37:15] "GET %2Ffavicon.ico HTTP/1.0" 304 - 0.0045
+192.168.59.3 - - [06/Dec/2014 20:37:15] "GET / HTTP/1.0" 304 - 0.0341
+192.168.59.3 - - [06/Dec/2014 20:37:16] "GET %2Ffavicon.ico HTTP/1.0" 304 - 0.0035
+192.168.59.3 - - [06/Dec/2014 20:37:16] "GET / HTTP/1.0" 304 - 0.0328
+192.168.59.3 - - [06/Dec/2014 20:37:16] "GET %2Ffavicon.ico HTTP/1.0" 304 - 0.0037
+192.168.59.3 - - [06/Dec/2014 20:37:16] "GET / HTTP/1.0" 304 - 0.0350
+192.168.59.3 - - [06/Dec/2014 20:37:16] "GET %2Ffavicon.ico HTTP/1.0" 304 - 0.0033
+192.168.59.3 - - [06/Dec/2014 20:37:19] "GET / HTTP/1.0" 304 - 0.0332
+192.168.59.3 - - [06/Dec/2014 20:37:19] "GET %2Ffavicon.ico HTTP/1.0" 304 - 0.0034
+192.168.59.3 - - [06/Dec/2014 20:37:21] "GET / HTTP/1.0" 304 - 0.0348
+192.168.59.3 - - [06/Dec/2014 20:37:21] "GET %2Ffavicon.ico HTTP/1.0" 304 - 0.0042
+192.168.59.3 - - [06/Dec/2014 20:37:21] "GET / HTTP/1.0" 200 - 0.0395
+192.168.59.3 - - [06/Dec/2014 20:37:21] "GET %2Ffavicon.ico HTTP/1.0" 304 - 0.0038
+192.168.59.3 - - [06/Dec/2014 20:37:21] "GET / HTTP/1.0" 200 - 0.0347
+192.168.59.3 - - [06/Dec/2014 20:37:22] "GET / HTTP/1.0" 200 - 0.0365
+192.168.59.3 - - [06/Dec/2014 20:37:22] "GET %2Ffavicon.ico HTTP/1.0" 304 - 0.0083
+192.168.59.3 - - [06/Dec/2014 20:37:22] "GET / HTTP/1.0" 200 - 0.0586
+192.168.59.3 - - [06/Dec/2014 20:37:22] "GET / HTTP/1.0" 200 - 0.0430
+192.168.59.3 - - [06/Dec/2014 20:37:22] "GET %2Ffavicon.ico HTTP/1.0" 304 - 0.0045
+192.168.59.3 - - [06/Dec/2014 20:37:28] "GET / HTTP/1.0" 304 - 0.0315
+192.168.59.3 - - [06/Dec/2014 20:37:29] "GET %2Ffavicon.ico HTTP/1.0" 304 - 0.0042
+192.168.59.3 - - [06/Dec/2014 20:37:37] "GET / HTTP/1.0" 304 - 0.0353
+192.168.59.3 - - [06/Dec/2014 20:37:38] "GET %2Ffavicon.ico HTTP/1.0" 304 - 0.0040
+192.168.59.3 - - [06/Dec/2014 20:37:38] "GET / HTTP/1.0" 304 - 0.0321
+192.168.59.3 - - [06/Dec/2014 20:37:38] "GET %2Ffavicon.ico HTTP/1.0" 304 - 0.0044
+I, [2014-12-06T21:00:12.068772 #14]  INFO -- : Refreshing Gem list
+I, [2014-12-06T21:00:51.531259 #14]  INFO -- : listening on addr=/tmp/unicorn.sock fd=10
+I, [2014-12-06T21:00:51.531713 #14]  INFO -- : listening on addr=0.0.0.0:8080 fd=11
+I, [2014-12-06T21:00:54.853451 #14]  INFO -- : master process ready
+I, [2014-12-06T21:00:54.966290 #17]  INFO -- : worker=0 ready
+I, [2014-12-06T21:00:54.999607 #23]  INFO -- : worker=2 ready
+I, [2014-12-06T21:00:55.016676 #20]  INFO -- : worker=1 ready
+192.168.59.3 - - [06/Dec/2014 21:00:56] "GET / HTTP/1.1" 200 - 1.5667
+192.168.59.3 - - [06/Dec/2014 21:00:58] "GET %2Ffavicon.ico HTTP/1.1" 200 - 1.4787
+192.168.59.3 - - [06/Dec/2014 21:01:01] "GET / HTTP/1.1" 200 - 0.8743
+192.168.59.3 - - [06/Dec/2014 21:01:01] "GET /application.css?body=1 HTTP/1.1" 304 - 0.1343
+192.168.59.3 - - [06/Dec/2014 21:01:01] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.1914
+192.168.59.3 - - [06/Dec/2014 21:01:01] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.1869
+192.168.59.3 - - [06/Dec/2014 21:01:01] "GET /application.js?body=1 HTTP/1.1" 304 - 0.1819
+192.168.59.3 - - [06/Dec/2014 21:01:02] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 1.5654
+192.168.59.3 - - [06/Dec/2014 21:01:02] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0046
+I, [2014-12-06T21:39:59.764977 #14]  INFO -- : Refreshing Gem list
+I, [2014-12-06T21:40:44.423450 #14]  INFO -- : listening on addr=/tmp/unicorn.sock fd=11
+I, [2014-12-06T21:40:44.424209 #14]  INFO -- : listening on addr=0.0.0.0:8080 fd=12
+E, [2014-12-06T21:40:48.004017 #14] ERROR -- : FATAL:  database "/ecstatic_wilson/db_development" does not exist
+Run `$ bin/rake db:create db:migrate` to create your database (ActiveRecord::NoDatabaseError)
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:898:in `rescue in connect'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+/usr/local/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+/usr/local/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_handling.rb:87:in `connection'
+/opt/app/config/unicorn.rb:29:in `block in reload'
+/opt/app/vendor/bundle/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:519:in `call'
+/opt/app/vendor/bundle/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:519:in `spawn_missing_workers'
+/opt/app/vendor/bundle/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+/opt/app/vendor/bundle/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+/opt/app/vendor/bundle/bin/unicorn:23:in `load'
+/opt/app/vendor/bundle/bin/unicorn:23:in `<main>'
+I, [2014-12-06T21:41:32.294483 #12]  INFO -- : Refreshing Gem list
+I, [2014-12-06T21:42:10.109791 #12]  INFO -- : listening on addr=/tmp/unicorn.sock fd=11
+I, [2014-12-06T21:42:10.110379 #12]  INFO -- : listening on addr=0.0.0.0:8080 fd=12
+E, [2014-12-06T21:42:13.294908 #12] ERROR -- : FATAL:  database "/silly_rosalind/db_development" does not exist
+Run `$ bin/rake db:create db:migrate` to create your database (ActiveRecord::NoDatabaseError)
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:898:in `rescue in connect'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+/usr/local/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+/usr/local/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_handling.rb:87:in `connection'
+/opt/app/config/unicorn.rb:29:in `block in reload'
+/opt/app/vendor/bundle/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:519:in `call'
+/opt/app/vendor/bundle/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:519:in `spawn_missing_workers'
+/opt/app/vendor/bundle/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+/opt/app/vendor/bundle/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+/opt/app/vendor/bundle/bin/unicorn:23:in `load'
+/opt/app/vendor/bundle/bin/unicorn:23:in `<main>'
+I, [2014-12-06T21:42:43.350474 #16]  INFO -- : Refreshing Gem list
+I, [2014-12-06T21:43:24.286644 #16]  INFO -- : unlinking existing socket=/tmp/unicorn.sock
+I, [2014-12-06T21:43:24.287383 #16]  INFO -- : listening on addr=/tmp/unicorn.sock fd=11
+I, [2014-12-06T21:43:24.287861 #16]  INFO -- : listening on addr=0.0.0.0:8080 fd=12
+E, [2014-12-06T21:43:28.949040 #16] ERROR -- : FATAL:  database "/silly_rosalind/db_development" does not exist
+Run `$ bin/rake db:create db:migrate` to create your database (ActiveRecord::NoDatabaseError)
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:898:in `rescue in connect'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+/usr/local/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+/usr/local/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+/opt/app/vendor/bundle/gems/activerecord-4.1.6/lib/active_record/connection_handling.rb:87:in `connection'
+config/unicorn.rb:29:in `block in reload'
+/opt/app/vendor/bundle/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:519:in `call'
+/opt/app/vendor/bundle/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:519:in `spawn_missing_workers'
+/opt/app/vendor/bundle/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+/opt/app/vendor/bundle/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+/opt/app/vendor/bundle/bin/unicorn:23:in `load'
+/opt/app/vendor/bundle/bin/unicorn:23:in `<main>'
+I, [2014-12-06T21:45:06.058836 #13]  INFO -- : Refreshing Gem list
+I, [2014-12-06T21:46:09.250637 #13]  INFO -- : listening on addr=/tmp/unicorn.sock fd=11
+I, [2014-12-06T21:46:09.251463 #13]  INFO -- : listening on addr=0.0.0.0:8080 fd=12
+I, [2014-12-06T21:46:13.474025 #13]  INFO -- : master process ready
+I, [2014-12-06T21:46:13.581237 #16]  INFO -- : worker=0 ready
+I, [2014-12-06T21:46:13.637720 #19]  INFO -- : worker=1 ready
+I, [2014-12-06T21:46:13.671945 #22]  INFO -- : worker=2 ready
+192.168.59.3 - - [06/Dec/2014 21:46:50] "GET / HTTP/1.1" 304 - 2.1235
+192.168.59.3 - - [06/Dec/2014 21:46:51] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.1589
+192.168.59.3 - - [06/Dec/2014 21:46:51] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.1746
+192.168.59.3 - - [06/Dec/2014 21:46:51] "GET /application.js?body=1 HTTP/1.1" 304 - 0.2369
+192.168.59.3 - - [06/Dec/2014 21:46:53] "GET /jquery.js?body=1 HTTP/1.1" 304 - 3.0549
+192.168.59.3 - - [06/Dec/2014 21:46:54] "GET /application.css?body=1 HTTP/1.1" 304 - 3.1466
+192.168.59.3 - - [06/Dec/2014 21:46:54] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0057
+I, [2014-12-06T21:53:11.359015 #14]  INFO -- : Refreshing Gem list
+I, [2014-12-06T21:53:50.250066 #14]  INFO -- : listening on addr=/tmp/unicorn.sock fd=11
+I, [2014-12-06T21:53:50.250592 #14]  INFO -- : listening on addr=0.0.0.0:8080 fd=12
+I, [2014-12-06T21:53:53.900937 #14]  INFO -- : master process ready
+I, [2014-12-06T21:53:54.081158 #17]  INFO -- : worker=0 ready
+I, [2014-12-06T21:53:54.081905 #23]  INFO -- : worker=2 ready
+I, [2014-12-06T21:53:54.094046 #20]  INFO -- : worker=1 ready
+192.168.59.3 - - [06/Dec/2014 21:55:07] "GET / HTTP/1.1" 304 - 2.7795
+192.168.59.3 - - [06/Dec/2014 21:55:07] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.2160
+192.168.59.3 - - [06/Dec/2014 21:55:08] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.1992
+192.168.59.3 - - [06/Dec/2014 21:55:08] "GET /application.js?body=1 HTTP/1.1" 304 - 0.2688
+192.168.59.3 - - [06/Dec/2014 21:55:11] "GET /application.css?body=1 HTTP/1.1" 304 - 4.2769
+192.168.59.3 - - [06/Dec/2014 21:55:12] "GET /jquery.js?body=1 HTTP/1.1" 304 - 4.5215
+192.168.59.3 - - [06/Dec/2014 21:55:12] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0062
+192.168.59.3 - - [06/Dec/2014 21:55:17] "GET /notes/new HTTP/1.1" 500 20583 2.2438
+192.168.59.3 - - [06/Dec/2014 21:55:17] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0041
+192.168.59.3 - - [06/Dec/2014 21:55:32] "GET /notes/new HTTP/1.1" 500 20625 1.6235
+192.168.59.3 - - [06/Dec/2014 21:55:33] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0045
+192.168.59.3 - - [06/Dec/2014 21:55:46] "GET /notes/new HTTP/1.1" 200 - 1.0318
+192.168.59.3 - - [06/Dec/2014 21:55:46] "GET /application.css?body=1 HTTP/1.1" 304 - 0.1119
+192.168.59.3 - - [06/Dec/2014 21:55:46] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.1698
+192.168.59.3 - - [06/Dec/2014 21:55:46] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.2170
+192.168.59.3 - - [06/Dec/2014 21:55:46] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.1582
+192.168.59.3 - - [06/Dec/2014 21:55:46] "GET /application.js?body=1 HTTP/1.1" 304 - 0.1375
+192.168.59.3 - - [06/Dec/2014 21:55:46] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0045
+192.168.59.3 - - [06/Dec/2014 21:55:53] "POST /notes HTTP/1.1" 302 - 0.1958
+192.168.59.3 - - [06/Dec/2014 21:55:54] "GET /notes/1 HTTP/1.1" 200 - 0.7904
+192.168.59.3 - - [06/Dec/2014 21:55:54] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.1298
+192.168.59.3 - - [06/Dec/2014 21:55:54] "GET /application.css?body=1 HTTP/1.1" 304 - 0.1336
+192.168.59.3 - - [06/Dec/2014 21:55:54] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.1524
+192.168.59.3 - - [06/Dec/2014 21:55:54] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.0998
+192.168.59.3 - - [06/Dec/2014 21:55:54] "GET /application.js?body=1 HTTP/1.1" 304 - 0.1082
+192.168.59.3 - - [06/Dec/2014 21:55:54] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0039
+192.168.59.3 - - [06/Dec/2014 21:57:15] "GET /notes/1 HTTP/1.1" 304 - 0.4116
+192.168.59.3 - - [06/Dec/2014 21:57:16] "GET /application.css?body=1 HTTP/1.1" 304 - 0.2735
+192.168.59.3 - - [06/Dec/2014 21:57:16] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.2782
+192.168.59.3 - - [06/Dec/2014 21:57:16] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.2805
+192.168.59.3 - - [06/Dec/2014 21:57:16] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.1118
+192.168.59.3 - - [06/Dec/2014 21:57:16] "GET /application.js?body=1 HTTP/1.1" 304 - 0.1306
+192.168.59.3 - - [06/Dec/2014 21:57:16] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0047
+192.168.59.3 - - [06/Dec/2014 21:57:19] "GET /notes/new HTTP/1.1" 500 20585 1.6315
+192.168.59.3 - - [06/Dec/2014 21:57:20] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0039
+192.168.59.3 - - [06/Dec/2014 21:57:38] "GET /notes/new HTTP/1.1" 200 - 0.2848
+192.168.59.3 - - [06/Dec/2014 21:57:38] "GET /application.css?body=1 HTTP/1.1" 304 - 0.1285
+192.168.59.3 - - [06/Dec/2014 21:57:38] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.1465
+192.168.59.3 - - [06/Dec/2014 21:57:38] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.2220
+192.168.59.3 - - [06/Dec/2014 21:57:38] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.1275
+192.168.59.3 - - [06/Dec/2014 21:57:38] "GET /application.js?body=1 HTTP/1.1" 304 - 0.1336
+192.168.59.3 - - [06/Dec/2014 21:57:38] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0035
+192.168.59.3 - - [06/Dec/2014 21:57:41] "POST /notes HTTP/1.1" 302 - 0.1376
+192.168.59.3 - - [06/Dec/2014 21:57:42] "GET /notes/2 HTTP/1.1" 200 - 0.3172
+192.168.59.3 - - [06/Dec/2014 21:57:42] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.1314
+192.168.59.3 - - [06/Dec/2014 21:57:42] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.1413
+192.168.59.3 - - [06/Dec/2014 21:57:42] "GET /application.css?body=1 HTTP/1.1" 304 - 0.1681
+192.168.59.3 - - [06/Dec/2014 21:57:42] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.0944
+192.168.59.3 - - [06/Dec/2014 21:57:42] "GET /application.js?body=1 HTTP/1.1" 304 - 0.1356
+192.168.59.3 - - [06/Dec/2014 21:57:42] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0049
+192.168.59.3 - - [06/Dec/2014 21:57:45] "GET /notes/2 HTTP/1.1" 304 - 0.2941
+192.168.59.3 - - [06/Dec/2014 21:57:45] "GET /application.css?body=1 HTTP/1.1" 304 - 0.1102
+192.168.59.3 - - [06/Dec/2014 21:57:45] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.1250
+192.168.59.3 - - [06/Dec/2014 21:57:45] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.1562
+192.168.59.3 - - [06/Dec/2014 21:57:45] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.0953
+192.168.59.3 - - [06/Dec/2014 21:57:45] "GET /application.js?body=1 HTTP/1.1" 304 - 0.1187
+192.168.59.3 - - [06/Dec/2014 21:57:45] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0039
+192.168.59.3 - - [06/Dec/2014 21:57:46] "GET /notes/2 HTTP/1.1" 304 - 0.3048
+192.168.59.3 - - [06/Dec/2014 21:57:46] "GET /application.css?body=1 HTTP/1.1" 304 - 0.1274
+192.168.59.3 - - [06/Dec/2014 21:57:46] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.1574
+192.168.59.3 - - [06/Dec/2014 21:57:46] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.1637
+192.168.59.3 - - [06/Dec/2014 21:57:46] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.1079
+192.168.59.3 - - [06/Dec/2014 21:57:46] "GET /application.js?body=1 HTTP/1.1" 304 - 0.1074
+192.168.59.3 - - [06/Dec/2014 21:57:46] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0042
+192.168.59.3 - - [06/Dec/2014 21:57:50] "GET /notes HTTP/1.1" 500 27515 1.7221
+192.168.59.3 - - [06/Dec/2014 21:57:50] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0040
+192.168.59.3 - - [06/Dec/2014 21:58:00] "GET /notes HTTP/1.1" 500 27590 1.4517
+192.168.59.3 - - [06/Dec/2014 21:58:00] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0041
+I, [2014-12-06T21:58:29.793661 #13]  INFO -- : Refreshing Gem list
+I, [2014-12-06T21:59:13.092192 #13]  INFO -- : listening on addr=/tmp/unicorn.sock fd=11
+I, [2014-12-06T21:59:13.092975 #13]  INFO -- : listening on addr=0.0.0.0:8080 fd=12
+I, [2014-12-06T21:59:16.885492 #13]  INFO -- : master process ready
+I, [2014-12-06T21:59:16.936462 #16]  INFO -- : worker=0 ready
+192.168.59.3 - - [06/Dec/2014 21:59:19] "GET /notes HTTP/1.1" 200 - 2.9794
+192.168.59.3 - - [06/Dec/2014 21:59:20] "GET /application.css?body=1 HTTP/1.1" 304 - 0.0472
+192.168.59.3 - - [06/Dec/2014 21:59:20] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.0675
+192.168.59.3 - - [06/Dec/2014 21:59:20] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.0583
+192.168.59.3 - - [06/Dec/2014 21:59:20] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.0594
+192.168.59.3 - - [06/Dec/2014 21:59:20] "GET /application.js?body=1 HTTP/1.1" 304 - 0.0813
+192.168.59.3 - - [06/Dec/2014 21:59:20] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0037
+192.168.59.3 - - [06/Dec/2014 21:59:22] "GET /notes/1 HTTP/1.1" 304 - 0.3258
+192.168.59.3 - - [06/Dec/2014 21:59:22] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0036
+192.168.59.3 - - [06/Dec/2014 21:59:42] "GET /notes/1 HTTP/1.1" 304 - 0.2982
+192.168.59.3 - - [06/Dec/2014 21:59:42] "GET /application.css?body=1 HTTP/1.1" 304 - 0.0471
+192.168.59.3 - - [06/Dec/2014 21:59:42] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.0477
+192.168.59.3 - - [06/Dec/2014 21:59:43] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.0449
+192.168.59.3 - - [06/Dec/2014 21:59:43] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.0411
+192.168.59.3 - - [06/Dec/2014 21:59:43] "GET /application.js?body=1 HTTP/1.1" 304 - 0.0629
+192.168.59.3 - - [06/Dec/2014 21:59:43] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0049
+192.168.59.3 - - [06/Dec/2014 21:59:46] "GET /notes HTTP/1.1" 200 - 0.2885
+192.168.59.3 - - [06/Dec/2014 21:59:46] "GET /application.css?body=1 HTTP/1.1" 304 - 0.0404
+192.168.59.3 - - [06/Dec/2014 21:59:46] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.0437
+192.168.59.3 - - [06/Dec/2014 21:59:46] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.0441
+192.168.59.3 - - [06/Dec/2014 21:59:46] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.0424
+192.168.59.3 - - [06/Dec/2014 21:59:46] "GET /application.js?body=1 HTTP/1.1" 304 - 0.0644
+192.168.59.3 - - [06/Dec/2014 21:59:47] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0038
+192.168.59.3 - - [06/Dec/2014 21:59:48] "GET /notes/new HTTP/1.1" 304 - 0.5144
+192.168.59.3 - - [06/Dec/2014 21:59:49] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0039
+192.168.59.3 - - [06/Dec/2014 21:59:51] "POST /notes HTTP/1.1" 302 - 0.1396
+192.168.59.3 - - [06/Dec/2014 21:59:51] "GET /notes HTTP/1.1" 200 - 0.2780
+192.168.59.3 - - [06/Dec/2014 21:59:51] "GET /application.css?body=1 HTTP/1.1" 304 - 0.0367
+192.168.59.3 - - [06/Dec/2014 21:59:51] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.0420
+192.168.59.3 - - [06/Dec/2014 21:59:51] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.0424
+192.168.59.3 - - [06/Dec/2014 21:59:51] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.0447
+192.168.59.3 - - [06/Dec/2014 21:59:51] "GET /application.js?body=1 HTTP/1.1" 304 - 0.0611
+192.168.59.3 - - [06/Dec/2014 21:59:51] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0046
+192.168.59.3 - - [06/Dec/2014 21:59:53] "GET /notes/3 HTTP/1.1" 200 - 0.2941
+192.168.59.3 - - [06/Dec/2014 21:59:53] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0035
+192.168.59.3 - - [06/Dec/2014 22:01:14] "GET /notes/3 HTTP/1.1" 200 - 0.3028
+192.168.59.3 - - [06/Dec/2014 22:01:14] "GET /application.css?body=1 HTTP/1.1" 304 - 0.0424
+192.168.59.3 - - [06/Dec/2014 22:01:15] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.0481
+192.168.59.3 - - [06/Dec/2014 22:01:15] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.0435
+192.168.59.3 - - [06/Dec/2014 22:01:15] "GET /application.js?body=1 HTTP/1.1" 304 - 0.0570
+192.168.59.3 - - [06/Dec/2014 22:01:15] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.0428
+192.168.59.3 - - [06/Dec/2014 22:01:15] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0040
+192.168.59.3 - - [06/Dec/2014 22:01:17] "DELETE /notes/3 HTTP/1.1" 404 2827 0.9743
+192.168.59.3 - - [06/Dec/2014 22:01:17] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0040
+192.168.59.3 - - [06/Dec/2014 22:01:22] "DELETE /notes/3 HTTP/1.1" 404 2827 0.7105
+192.168.59.3 - - [06/Dec/2014 22:01:22] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0035
+192.168.59.3 - - [06/Dec/2014 22:01:24] "DELETE /notes/3 HTTP/1.1" 404 2827 0.7328
+192.168.59.3 - - [06/Dec/2014 22:01:24] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0047
+192.168.59.3 - - [06/Dec/2014 22:01:32] "DELETE /notes/3 HTTP/1.1" 404 2827 0.6858
+192.168.59.3 - - [06/Dec/2014 22:01:32] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0050
+192.168.59.3 - - [06/Dec/2014 22:01:35] "DELETE /notes/3 HTTP/1.1" 404 2827 0.7171
+192.168.59.3 - - [06/Dec/2014 22:01:38] "GET /notes HTTP/1.1" 304 - 0.2948
+192.168.59.3 - - [06/Dec/2014 22:01:38] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0044
+192.168.59.3 - - [06/Dec/2014 22:01:38] "GET /application.css?body=1 HTTP/1.1" 304 - 0.0395
+192.168.59.3 - - [06/Dec/2014 22:01:38] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.0444
+192.168.59.3 - - [06/Dec/2014 22:01:38] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.0470
+192.168.59.3 - - [06/Dec/2014 22:01:39] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.0455
+192.168.59.3 - - [06/Dec/2014 22:01:39] "GET /application.js?body=1 HTTP/1.1" 304 - 0.0745
+192.168.59.3 - - [06/Dec/2014 22:01:39] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0038
+192.168.59.3 - - [06/Dec/2014 22:01:40] "GET /notes/3 HTTP/1.1" 304 - 0.3003
+192.168.59.3 - - [06/Dec/2014 22:01:40] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0039
+192.168.59.3 - - [06/Dec/2014 22:01:42] "DELETE /notes/3 HTTP/1.1" 404 2827 0.7286
+192.168.59.3 - - [06/Dec/2014 22:01:42] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0051
+192.168.59.3 - - [06/Dec/2014 22:02:06] "DELETE /notes/3 HTTP/1.1" 404 2827 0.7261
+192.168.59.3 - - [06/Dec/2014 22:02:15] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0044
+192.168.59.3 - - [06/Dec/2014 22:02:22] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0050
+192.168.59.3 - - [06/Dec/2014 22:02:22] "GET /notes/3 HTTP/1.1" 304 - 0.3064
+192.168.59.3 - - [06/Dec/2014 22:02:22] "GET /application.css?body=1 HTTP/1.1" 304 - 0.0469
+192.168.59.3 - - [06/Dec/2014 22:02:22] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.0490
+192.168.59.3 - - [06/Dec/2014 22:02:22] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.0501
+192.168.59.3 - - [06/Dec/2014 22:02:23] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.0458
+192.168.59.3 - - [06/Dec/2014 22:02:23] "GET /application.js?body=1 HTTP/1.1" 304 - 0.0708
+192.168.59.3 - - [06/Dec/2014 22:02:23] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0050
+192.168.59.3 - - [06/Dec/2014 22:02:26] "GET /application.css?body=1 HTTP/1.1" 304 - 0.0737
+192.168.59.3 - - [06/Dec/2014 22:02:38] "DELETE /notes/3 HTTP/1.1" 404 2827 0.7723
+192.168.59.3 - - [06/Dec/2014 22:02:39] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0046
+192.168.59.3 - - [06/Dec/2014 22:03:25] "DELETE /notes/3 HTTP/1.1" 404 2827 0.7450
+192.168.59.3 - - [06/Dec/2014 22:03:25] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0091
+192.168.59.3 - - [06/Dec/2014 22:03:59] "DELETE /notes/3 HTTP/1.1" 404 2827 0.7462
+192.168.59.3 - - [06/Dec/2014 22:04:00] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0037
+192.168.59.3 - - [06/Dec/2014 22:04:03] "GET /notes/3 HTTP/1.1" 304 - 0.2949
+192.168.59.3 - - [06/Dec/2014 22:04:03] "GET /application.css?body=1 HTTP/1.1" 304 - 0.0467
+192.168.59.3 - - [06/Dec/2014 22:04:03] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.0456
+192.168.59.3 - - [06/Dec/2014 22:04:03] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.0485
+192.168.59.3 - - [06/Dec/2014 22:04:03] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.0408
+192.168.59.3 - - [06/Dec/2014 22:04:03] "GET /application.js?body=1 HTTP/1.1" 304 - 0.0721
+192.168.59.3 - - [06/Dec/2014 22:04:04] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0044
+192.168.59.3 - - [06/Dec/2014 22:04:05] "DELETE /notes/3 HTTP/1.1" 404 2827 0.7063
+192.168.59.3 - - [06/Dec/2014 22:04:06] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0039
+192.168.59.3 - - [06/Dec/2014 22:04:18] "DELETE /notes/3 HTTP/1.1" 404 2827 0.7212
+192.168.59.3 - - [06/Dec/2014 22:04:18] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0038
+192.168.59.3 - - [06/Dec/2014 22:04:28] "DELETE /notes/3 HTTP/1.1" 404 2827 0.6495
+192.168.59.3 - - [06/Dec/2014 22:04:28] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0038
+192.168.59.3 - - [06/Dec/2014 22:04:45] "GET /notes/3 HTTP/1.1" 304 - 0.2858
+192.168.59.3 - - [06/Dec/2014 22:04:45] "GET /application.css?body=1 HTTP/1.1" 304 - 0.0396
+192.168.59.3 - - [06/Dec/2014 22:04:45] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.0425
+192.168.59.3 - - [06/Dec/2014 22:04:45] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.0452
+192.168.59.3 - - [06/Dec/2014 22:04:45] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.0400
+192.168.59.3 - - [06/Dec/2014 22:04:45] "GET /application.js?body=1 HTTP/1.1" 304 - 0.0623
+192.168.59.3 - - [06/Dec/2014 22:04:45] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0051
+192.168.59.3 - - [06/Dec/2014 22:04:48] "DELETE /notes/3 HTTP/1.1" 404 2827 0.7141
+192.168.59.3 - - [06/Dec/2014 22:04:48] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0039
+192.168.59.3 - - [06/Dec/2014 22:05:02] "DELETE /notes/3 HTTP/1.1" 404 2827 0.7454
+192.168.59.3 - - [06/Dec/2014 22:05:04] "DELETE /notes/3 HTTP/1.1" 404 2827 0.6982
+192.168.59.3 - - [06/Dec/2014 22:05:04] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0040
+192.168.59.3 - - [06/Dec/2014 22:05:04] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0036
+192.168.59.3 - - [06/Dec/2014 22:05:07] "DELETE /notes/3 HTTP/1.1" 404 2827 0.6696
+192.168.59.3 - - [06/Dec/2014 22:05:07] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0039
+I, [2014-12-06T22:05:30.366346 #13]  INFO -- : Refreshing Gem list
+I, [2014-12-06T22:06:05.213529 #13]  INFO -- : listening on addr=/tmp/unicorn.sock fd=11
+I, [2014-12-06T22:06:05.214109 #13]  INFO -- : listening on addr=0.0.0.0:8080 fd=12
+I, [2014-12-06T22:06:08.401265 #13]  INFO -- : master process ready
+I, [2014-12-06T22:06:08.447865 #16]  INFO -- : worker=0 ready
+192.168.59.3 - - [06/Dec/2014 22:06:10] "GET /notes/3 HTTP/1.1" 304 - 2.5048
+192.168.59.3 - - [06/Dec/2014 22:06:11] "GET /application.css?body=1 HTTP/1.1" 304 - 0.0421
+192.168.59.3 - - [06/Dec/2014 22:06:11] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.0600
+192.168.59.3 - - [06/Dec/2014 22:06:11] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.0528
+192.168.59.3 - - [06/Dec/2014 22:06:11] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.0556
+192.168.59.3 - - [06/Dec/2014 22:06:11] "GET /application.js?body=1 HTTP/1.1" 304 - 0.0705
+192.168.59.3 - - [06/Dec/2014 22:06:11] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0044
+192.168.59.3 - - [06/Dec/2014 22:06:14] "DELETE /notes/3 HTTP/1.1" 302 - 0.1359
+192.168.59.3 - - [06/Dec/2014 22:06:14] "GET /notes HTTP/1.1" 200 - 0.2813
+192.168.59.3 - - [06/Dec/2014 22:06:14] "GET /application.css?body=1 HTTP/1.1" 304 - 0.0361
+192.168.59.3 - - [06/Dec/2014 22:06:14] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.0441
+192.168.59.3 - - [06/Dec/2014 22:06:14] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.0412
+192.168.59.3 - - [06/Dec/2014 22:06:15] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.0389
+192.168.59.3 - - [06/Dec/2014 22:06:15] "GET /application.js?body=1 HTTP/1.1" 304 - 0.0577
+192.168.59.3 - - [06/Dec/2014 22:06:15] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0045
+192.168.59.3 - - [06/Dec/2014 22:06:17] "GET /notes/new HTTP/1.1" 304 - 0.4763
+192.168.59.3 - - [06/Dec/2014 22:06:17] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0046
+192.168.59.3 - - [06/Dec/2014 22:06:19] "POST /notes HTTP/1.1" 302 - 0.0474
+192.168.59.3 - - [06/Dec/2014 22:06:19] "GET /notes HTTP/1.1" 200 - 0.2770
+192.168.59.3 - - [06/Dec/2014 22:06:19] "GET /application.css?body=1 HTTP/1.1" 304 - 0.0419
+192.168.59.3 - - [06/Dec/2014 22:06:19] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.0436
+192.168.59.3 - - [06/Dec/2014 22:06:19] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.0421
+192.168.59.3 - - [06/Dec/2014 22:06:19] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.0417
+192.168.59.3 - - [06/Dec/2014 22:06:20] "GET /application.js?body=1 HTTP/1.1" 304 - 0.0923
+192.168.59.3 - - [06/Dec/2014 22:06:20] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0036
+192.168.59.3 - - [06/Dec/2014 22:06:21] "GET /notes/4 HTTP/1.1" 200 - 0.2943
+192.168.59.3 - - [06/Dec/2014 22:06:21] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0039
+192.168.59.3 - - [06/Dec/2014 22:06:22] "DELETE /notes/4 HTTP/1.1" 302 - 0.0511
+192.168.59.3 - - [06/Dec/2014 22:06:23] "GET /notes HTTP/1.1" 200 - 0.2925
+192.168.59.3 - - [06/Dec/2014 22:06:23] "GET /application.css?body=1 HTTP/1.1" 304 - 0.0413
+192.168.59.3 - - [06/Dec/2014 22:06:23] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.0463
+192.168.59.3 - - [06/Dec/2014 22:06:23] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.0444
+192.168.59.3 - - [06/Dec/2014 22:06:23] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.0416
+192.168.59.3 - - [06/Dec/2014 22:06:23] "GET /application.js?body=1 HTTP/1.1" 304 - 0.0615
+192.168.59.3 - - [06/Dec/2014 22:06:23] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0052
+192.168.59.3 - - [06/Dec/2014 22:06:25] "GET /notes/new HTTP/1.1" 304 - 0.3093
+192.168.59.3 - - [06/Dec/2014 22:06:25] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0040
+192.168.59.3 - - [06/Dec/2014 22:06:27] "POST /notes HTTP/1.1" 302 - 0.0444
+192.168.59.3 - - [06/Dec/2014 22:06:28] "GET /notes HTTP/1.1" 200 - 0.2914
+192.168.59.3 - - [06/Dec/2014 22:06:28] "GET /application.css?body=1 HTTP/1.1" 304 - 0.0392
+192.168.59.3 - - [06/Dec/2014 22:06:28] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.0432
+192.168.59.3 - - [06/Dec/2014 22:06:28] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.0439
+192.168.59.3 - - [06/Dec/2014 22:06:28] "GET /turbolinks.js?body=1 HTTP/1.1" 304 - 0.0411
+192.168.59.3 - - [06/Dec/2014 22:06:28] "GET /application.js?body=1 HTTP/1.1" 304 - 0.0629
+192.168.59.3 - - [06/Dec/2014 22:06:28] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0037
