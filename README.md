@@ -26,6 +26,7 @@ $ docker build -t rails_dev_postgres .
 $ docker run -v $PWD:/opt/app rails_dev_postgres bundle install
 # Database setup
 $ docker run -d -v /var/lib/postgresql --name db postgres
+# You have to use --name [container_name] if you use DB_NAME in database.yml
 $ docker run -v $PWD:/opt/app --link db:db --name rails rails_dev_postgres bundle exec rake db:create
 $ docker rm rails
 $ docker run -v $PWD:/opt/app --link db:db --name rails rails_dev_postgres bundle exec rake db:migrate
