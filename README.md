@@ -6,11 +6,11 @@
 - db/database.yml
 
 ### Setup
-Add gems
+Add the gems to your `Gemfile`
 ```
-$ echo 'gem "foreman"' >> Gemfile
-$ echo 'gem "pg"' >> Gemfile
-$ echo 'gem "unicorn"' >> Gemfile
+gem "foreman"
+gem "pg"
+gem "unicorn"
 ```
 
 Create /tmp/pids (Only do this step if unicorn.rb file states pid)
@@ -20,17 +20,18 @@ $ mkdir tmp/pids
 
 Docker build and run
 ```
-# Build image
-$ docker build -t rails_dev_postgres .
-# Run bundle install
-$ docker run -v $PWD:/opt/app rails_dev_postgres bundle install
-# Database setup
-$ docker run -d -v /var/lib/postgresql --name db postgres
-# You have to use --name [container_name] if you use DB_NAME in database.yml
-$ docker run -v $PWD:/opt/app --link db:db --name rails rails_dev_postgres bundle exec rake db:create
-$ docker rm rails
-$ docker run -v $PWD:/opt/app --link db:db --name rails rails_dev_postgres bundle exec rake db:migrate
-$ docker rm rails
-# Create container and run app
-$ docker run -p 3000:8080 -v $PWD:/opt/app --link db:db --name rails rails_dev_postgres
+# Build app image
+$ docker build -t [app_tag_name] .
+# Run bundle install inside app container
+$ docker run -v $PWD:/opt/app [app_tag_name] bundle install
+# Run postgres database container
+$ docker run -d -v /var/lib/postgresql --name [db_tag_name] postgres
+# Create database inside postgres container using app container's database.yml
+$ docker run -e DATABASE_NAME=[db_name] -v $PWD:/opt/app --link [db_tag_name]:db [app_tag_name] bundle exec rake db:create
+# Run migrations on postgres container from the app container
+$ docker run -e DATABASE_NAME=[db_name] -v $PWD:/opt/app --link [db_tag_name]:db [app_tag_name] bundle exec rake db:migrate
+# Run app container
+$ docker run -e DATABASE_NAME=[db_name] -p 3000:8080 -v $PWD:/opt/app --link [db_tag_name]:db [app_tag_name]
+$ boot2docker ip
 ```
+Go to http://[boot2docker_ip_address]:3000
