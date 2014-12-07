@@ -35,3 +35,8 @@ $ docker run -e DATABASE_NAME=[db_name] -p 3000:8080 -v $PWD:/opt/app --link [db
 $ boot2docker ip
 ```
 Go to http://[boot2docker_ip_address]:3000
+
+### Docker hub
+```
+$ docker pull dangerous/docker-rails-dev-postgres
+```
