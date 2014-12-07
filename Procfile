@@ -1,1 +1,1 @@
-web: bundle exec unicorn -p 8080 -c $ROOT_DIR/config/unicorn.rb
+web: bundle exec unicorn -E $RAILS_ENV -p 8080 -c $ROOT_DIR/config/unicorn.rb

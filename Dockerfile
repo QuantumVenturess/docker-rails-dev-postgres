@@ -4,6 +4,7 @@ ENV ROOT_DIR /opt/app
 
 RUN mkdir -p $ROOT_DIR
 WORKDIR $ROOT_DIR
+VOLUME $ROOT_DIR
 
 # ADD Gemfile $ROOT_DIR/Gemfile
 # ADD Gemfile.lock $ROOT_DIR/Gemfile.lock
